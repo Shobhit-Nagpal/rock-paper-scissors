@@ -49,6 +49,10 @@ function playRound(playerSelection, computerSelection) {
     
     if (playerSelection.toLowerCase() == "rock" && computerSelection.toLowerCase() == "paper") {
 
+        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+
+        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+
         console.log("Paper beats rock");
 
         return computerSelection;
@@ -56,6 +60,10 @@ function playRound(playerSelection, computerSelection) {
     }
     else if (playerSelection.toLowerCase() == "rock" && computerSelection.toLowerCase() == "scissors") {
 
+        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+
+        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        
         console.log("Rock beats scissors");
         
         return playerSelection;
@@ -63,6 +71,10 @@ function playRound(playerSelection, computerSelection) {
     }
     else if (playerSelection.toLowerCase() == "paper" && computerSelection.toLowerCase() == "rock") {
 
+        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+
+        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        
         console.log("Paper beats rock");
         
         return playerSelection;
@@ -70,6 +82,10 @@ function playRound(playerSelection, computerSelection) {
     }
     else if (playerSelection.toLowerCase() == "paper" && computerSelection.toLowerCase() == "scissors") {
 
+        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+
+        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        
         console.log("Scissors beats paper");
         
         return computerSelection;
@@ -77,6 +93,10 @@ function playRound(playerSelection, computerSelection) {
     }
     else if (playerSelection.toLowerCase() == "scissors" && computerSelection.toLowerCase() == "paper") {
 
+        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+
+        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        
         console.log("Scisscors beats paper");
         
         return playerSelection;
@@ -84,6 +104,10 @@ function playRound(playerSelection, computerSelection) {
     }
     else if (playerSelection.toLowerCase() == "scissors" && computerSelection.toLowerCase() == "rock") {
 
+        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+
+        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        
         console.log("Rock beats scissors");
         
         return computerSelection;
@@ -91,6 +115,10 @@ function playRound(playerSelection, computerSelection) {
     } 
     else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
 
+        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+
+        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        
         console.log("Draw");
         
         let draw = "Draw";
@@ -99,7 +127,7 @@ function playRound(playerSelection, computerSelection) {
         
     } else {
 
-        console.log("Inalid");
+        console.log("Inalid entry.");
 
         let invalid= "Invalid entry";
 
@@ -157,11 +185,11 @@ function game() {
 
     if(playerStreak > computerStreak) {
 
-        console.log(`You win!`)
+        console.log(`Final Result: You win!`)
     }
     else if (computerStreak > playerStreak) {
      
-        console.log(`You lose!`)
+        console.log(`Final result: You lose!`)
         
     } else {
 
