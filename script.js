@@ -51,9 +51,11 @@ function playRound(playerSelection, computerSelection) {
 
         console.log(`Your choice: ${playerSelection.toUpperCase()}`);
 
-        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
 
         console.log("Paper beats rock");
+
+        console.log("<-------------------->\n");
 
         return computerSelection;
 
@@ -62,9 +64,11 @@ function playRound(playerSelection, computerSelection) {
 
         console.log(`Your choice: ${playerSelection.toUpperCase()}`);
 
-        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
         
         console.log("Rock beats scissors");
+
+        console.log("<-------------------->\n");
         
         return playerSelection;
 
@@ -73,9 +77,11 @@ function playRound(playerSelection, computerSelection) {
 
         console.log(`Your choice: ${playerSelection.toUpperCase()}`);
 
-        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
         
         console.log("Paper beats rock");
+
+        console.log("<-------------------->\n");
         
         return playerSelection;
 
@@ -84,9 +90,11 @@ function playRound(playerSelection, computerSelection) {
 
         console.log(`Your choice: ${playerSelection.toUpperCase()}`);
 
-        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
         
         console.log("Scissors beats paper");
+
+        console.log("<-------------------->\n");
         
         return computerSelection;
 
@@ -95,9 +103,11 @@ function playRound(playerSelection, computerSelection) {
 
         console.log(`Your choice: ${playerSelection.toUpperCase()}`);
 
-        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
         
         console.log("Scisscors beats paper");
+
+        console.log("<-------------------->\n");
         
         return playerSelection;
 
@@ -106,9 +116,11 @@ function playRound(playerSelection, computerSelection) {
 
         console.log(`Your choice: ${playerSelection.toUpperCase()}`);
 
-        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
         
         console.log("Rock beats scissors");
+
+        console.log("<-------------------->\n");
         
         return computerSelection;
 
@@ -117,9 +129,11 @@ function playRound(playerSelection, computerSelection) {
 
         console.log(`Your choice: ${playerSelection.toUpperCase()}`);
 
-        console.log(`Cpmputer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
         
         console.log("Draw");
+
+        console.log("<-------------------->\n");
         
         let draw = "Draw";
 
@@ -128,6 +142,8 @@ function playRound(playerSelection, computerSelection) {
     } else {
 
         console.log("Inalid entry.");
+
+        console.log("<-------------------->\n");
 
         let invalid= "Invalid entry";
 
