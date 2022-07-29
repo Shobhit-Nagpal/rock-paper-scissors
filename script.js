@@ -43,93 +43,93 @@ function getComputerChoice() {
 /*  FUNCTION TO PLAY ONE ROUND AND RETURN WINNER'S CHOICE  */
 
 
-function playRound(playerSelection, computerSelection) {
+function playRound(playerChoice, computerChoice) {
 
     /*  Logic of rock, paper, scisscors, returns who wins and why   */
     
-    if (playerSelection.toLowerCase() == "rock" && computerSelection.toLowerCase() == "paper") {
+    if (playerChoice.toLowerCase() == "rock" && computerChoice.toLowerCase() == "paper") {
 
-        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+        console.log(`Your choice: ${playerChoice.toUpperCase()}`);
 
-        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerChoice.toUpperCase()}`);
 
         console.log("Paper beats rock");
 
         console.log("<-------------------->\n");
 
-        return computerSelection;
+        return computerChoice;
 
     }
-    else if (playerSelection.toLowerCase() == "rock" && computerSelection.toLowerCase() == "scissors") {
+    else if (playerChoice.toLowerCase() == "rock" && computerChoice.toLowerCase() == "scissors") {
 
-        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+        console.log(`Your choice: ${playerChoice.toUpperCase()}`);
 
-        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerChoice.toUpperCase()}`);
         
         console.log("Rock beats scissors");
 
         console.log("<-------------------->\n");
         
-        return playerSelection;
+        return playerChoice;
 
     }
-    else if (playerSelection.toLowerCase() == "paper" && computerSelection.toLowerCase() == "rock") {
+    else if (playerChoice.toLowerCase() == "paper" && computerChoice.toLowerCase() == "rock") {
 
-        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+        console.log(`Your choice: ${playerChoice.toUpperCase()}`);
 
-        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerChoice.toUpperCase()}`);
         
         console.log("Paper beats rock");
 
         console.log("<-------------------->\n");
         
-        return playerSelection;
+        return playerChoice;
 
     }
-    else if (playerSelection.toLowerCase() == "paper" && computerSelection.toLowerCase() == "scissors") {
+    else if (playerChoice.toLowerCase() == "paper" && computerChoice.toLowerCase() == "scissors") {
 
-        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+        console.log(`Your choice: ${playerChoice.toUpperCase()}`);
 
-        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerChoice.toUpperCase()}`);
         
         console.log("Scissors beats paper");
 
         console.log("<-------------------->\n");
         
-        return computerSelection;
+        return computerChoice;
 
     }
-    else if (playerSelection.toLowerCase() == "scissors" && computerSelection.toLowerCase() == "paper") {
+    else if (playerChoice.toLowerCase() == "scissors" && computerChoice.toLowerCase() == "paper") {
 
-        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+        console.log(`Your choice: ${playerChoice.toUpperCase()}`);
 
-        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerChoice.toUpperCase()}`);
         
         console.log("Scisscors beats paper");
 
         console.log("<-------------------->\n");
         
-        return playerSelection;
+        return playerChoice;
 
     }
-    else if (playerSelection.toLowerCase() == "scissors" && computerSelection.toLowerCase() == "rock") {
+    else if (playerChoice.toLowerCase() == "scissors" && computerChoice.toLowerCase() == "rock") {
 
-        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+        console.log(`Your choice: ${playerChoice.toUpperCase()}`);
 
-        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerChoice.toUpperCase()}`);
         
         console.log("Rock beats scissors");
 
         console.log("<-------------------->\n");
         
-        return computerSelection;
+        return computerChoice;
 
     } 
-    else if (playerSelection.toLowerCase() == computerSelection.toLowerCase()) {
+    else if (playerChoice.toLowerCase() == computerChoice.toLowerCase()) {
 
-        console.log(`Your choice: ${playerSelection.toUpperCase()}`);
+        console.log(`Your choice: ${playerChoice.toUpperCase()}`);
 
-        console.log(`Computer's choice: ${computerSelection.toUpperCase()}`);
+        console.log(`Computer's choice: ${computerChoice.toUpperCase()}`);
         
         console.log("Draw");
 
@@ -168,22 +168,22 @@ function game() {
 
         /*  Prompting user for an input   */
 
-        let playerSelection = prompt("Pick between rock, paper and scissors");
+        let playerChoice = prompt("Pick between rock, paper and scissors");
 
         /*  Calling getComputerChoice() and storing choice   */
 
-        let computerSelection = getComputerChoice();
+        let computerChoice = getComputerChoice();
 
         /*  Calling playRound() and keeping count of winner  */
         
-        let count = playRound(playerSelection, computerSelection);
+        let count = playRound(playerChoice, computerChoice);
 
         /*  Keeping track of winning streak   */
 
-        if (count == playerSelection) {
+        if (count == playerChoice) {
             playerStreak += 1;
         }
-        else if (count == computerSelection) {
+        else if (count == computerChoice) {
             computerStreak += 1;
         }
         else if (count == draw) {
